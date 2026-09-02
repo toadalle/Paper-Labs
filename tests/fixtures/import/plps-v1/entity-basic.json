@@ -1,0 +1,17 @@
+{
+  "format": "paper-lab",
+  "version": 1,
+  "kind": "entity",
+  "spec": {
+    "name": "Portable MA",
+    "strategy": {
+      "type": "MOVING_AVERAGE_CROSS",
+      "version": 1,
+      "traits": {
+        "fast_window": 10,
+        "slow_window": 30,
+        "target_exposure": 1
+      }
+    }
+  }
+}

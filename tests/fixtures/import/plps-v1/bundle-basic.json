@@ -1,0 +1,11 @@
+{
+  "format": "paper-lab",
+  "version": 1,
+  "kind": "bundle",
+  "spec": {
+    "objects": [
+      { "alias": "entity.ma", "kind": "entity", "spec": { "name": "Bundle MA" } },
+      { "alias": "arena.spy", "kind": "arena", "spec": { "name": "Bundle SPY", "symbol": "SPY", "start": "2025-01-01", "end": "2025-12-31" } }
+    ]
+  }
+}

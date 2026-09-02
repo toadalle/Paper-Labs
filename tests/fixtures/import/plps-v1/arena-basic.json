@@ -1,0 +1,12 @@
+{
+  "format": "paper-lab",
+  "version": 1,
+  "kind": "arena",
+  "spec": {
+    "name": "Portable SPY",
+    "symbol": "SPY",
+    "timeframe": "1Day",
+    "start": "2025-01-01",
+    "end": "2025-12-31"
+  }
+}

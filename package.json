@@ -1,0 +1,25 @@
+{
+  "name": "paper-labs",
+  "version": "1.6.2",
+  "private": true,
+  "description": "Paper Lab V1 foundation: entity research, immutable evidence, and evolutionary simulation.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.16.0"
+  },
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "build:client": "tsc -p tsconfig.client.json",
+    "build:server": "tsc -p tsconfig.server.json",
+    "build": "npm run clean && npm run build:client && npm run build:server",
+    "dev": "npm run build && node --env-file-if-exists=.env dist/server/index.js",
+    "start": "node --env-file-if-exists=.env dist/server/index.js",
+    "test": "node scripts/test.mjs",
+    "check": "tsc -p tsconfig.client.json --noEmit && tsc -p tsconfig.server.json --noEmit && tsc -p tsconfig.tests.json --noEmit && npm test",
+    "manifest": "node scripts/generate-manifest.mjs"
+  },
+  "devDependencies": {
+    "@types/node": "24.4.0",
+    "typescript": "5.9.2"
+  }
+}
